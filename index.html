@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html langr="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Home Corona Hunter</title>
+  <link rel="shortcut icon" href="static/assets/icon/flaticon.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="static/css/font-awesome.css"/>
+  <link rel="stylesheet" type="text/css" href="static/css/corona_hunter.css">
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="static/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="static/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div data-target='#sideMenu1' onclick = 'sideNavOpenOrClose()' id='sideButton'> <span></span><span></span> <span></span> </div>
+  <div id ='sideMenu1' class='sidenav animated barry-allen shadow'>
+    <div class='background'>
+      <img draggable="false" src='static/assets/images/background-nav-user.jpg' />
+      <div class='user-informations'><h3>Corona Hunter</h3></div>
+    </div>
+    <div class="list-group">
+      <a href="../noticias/templates/index.html" class="list-group-item list-group-item-action"> <i class="fas fa-newspaper"></i> Notícias </a>
+      <a href="../dados/templates/index.html" class="list-group-item list-group-item-action"> <i class="fas fa-swatchbook"></i> Dados </a>
+      <a href="{% url 'sintese:home' %}" class="list-group-item list-group-item-action"> <i class="fas fa-chart-line"></i> Estatísicas </a>
+      <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Home Office</a>
+      <a href="#" class="list-group-item list-group-item-action"> <i class="fas fa-lock"></i>Segurança</a>
+      <a href="#" class="list-group-item list-group-item-action"> <i class="fas fa-wifi"></i>Conectividade</a>
+      <a href="#" class="list-group-item list-group-item-action"> <i class="fas fa-bookmark"></i>Organização</a>
+      <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Mais dicas</a>
+      <a href="#" class="list-group-item list-group-item-action"> <i class="fas fa-chalkboard-teacher"></i>E-learning / Home Scholling</a>
+      <a href="#" class="list-group-item list-group-item-action"> <i class="fas fa-heartbeat"></i>Saúde</a>
+      <a href="#" class="list-group-item list-group-item-action mb-3"> <i class="fas fa-gamepad"></i>Jogos eletrônicos</a>
+    </div>
+  </div>
+  <div class='outside' data-target='#sideMenu1' onclick = 'sideNavOpenOrClose()'></div>
+
+  <nav class="navbar fixed-top navbar-expand-lg bg-primary">
+    <div class="container">
+      <a class='titulo'> Título </a> 
+    </div>
+  </nav>
+  <main style='padding-top : 65px'>
+    Elementos
+  </main>
+
+  <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand text-white" href="#">© Ciência da Computação 2020</a>
+    <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon text-white"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Versionamento<span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Ícones</a>
+      </div>
+    </div>
+  </nav>
+
+</body>
+
+<script src="static/js/jquery.min.js"></script>
+<script src="static/js/corona_hunter.js"></script>
+<script src="static/js/bootstrap.bundle.min.js' %}"></script>
+</html>
