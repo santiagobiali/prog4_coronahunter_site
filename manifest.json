@@ -1,0 +1,16 @@
+{
+    "name": "CoronaHunter-PWA",
+    "short_name": "CHunter",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#303f9f",
+    "description": "A demo app for coronahunter",
+    "theme_color": "#303f9f",
+    "icons": [
+      {
+        "src": "./static/assets/icon/flaticon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
